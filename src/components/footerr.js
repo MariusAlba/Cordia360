@@ -6,8 +6,9 @@ import Col from 'react-bootstrap/Col';
 function Footerr() {
   return (
     <>
+    <div  className='HeaderStyle'>
     <Container>
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-md-center" >
         <Col> 
         <Card className="" border="secondary" style={{ width: '18rem' }}>
       <Card.Header>Header</Card.Header>
@@ -47,6 +48,7 @@ function Footerr() {
     </Container>
     <br />
     <br />
+    </div>
   </>
   );
 }

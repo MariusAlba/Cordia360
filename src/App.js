@@ -10,26 +10,34 @@ import Footerr from './components/footerr';
 import ListExample from './components/Foot';
 import Slider from './components/Slider';
 import HowItWorks from './components/HowItWorksLevel';
+import WhatWeOffer from './components/WhatWeOffer';
+import { HashRouter, Router, Route, Routes } from 'react-router-dom';
 
+import Home from './pages/home';
+import Produ from './pages/produ';
+
+
+
+import { NavLink } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <BasicExample/>
-      <Container >
-        <AboutTop />
-        <HowItWorks />
-        {/* <AccordionModul /> */}
-        <InputReadOnlyExample />
-        <FormFileExample />
-        <Slider />
-        <Footerr className="mb-5"/>
-        <Footerr />
-        <ListExample/>
-      </Container>
-      
+    <div>
+      <h1>Home</h1>
+      <ul>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/home">home </NavLink>
+        </li>
+        <li>
+          <NavLink to="/produ">Produ </NavLink>
+        </li>
+      </ul>
     </div>
   );
 }
 
 export default App;
+

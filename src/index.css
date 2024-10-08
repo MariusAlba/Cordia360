@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.aboutTop {
+  padding: 120px;
+  margin: 95px;
+}
+
+.Howitworksdiv {
+  padding-bottom: 120px;
+}
+
+.Slider {
+  padding: 120px;
+}
+
+.HeaderStyle {
+  padding: 120px;
+}

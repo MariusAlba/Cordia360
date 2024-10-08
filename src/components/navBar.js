@@ -1,13 +1,18 @@
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logoBrand from './Logo';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+// import { NavLink } from 'react-bootstrap';
+import { NavLink } from "react-router-dom";
+import Home from '../pages/home';
 
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary ">
+    <Navbar expand="lg" className="bg-body-tertiary Navbar">
       <Container>
 
       <Navbar.Brand href="#home">
@@ -24,8 +29,8 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Products</Nav.Link>
+          <NavLink to="/home" style={{ textDecoration: 'none', paddingRight: 6 }}> Home  </NavLink>
+            <NavLink to="/produ" style={{ textDecoration: 'none' }}> Products </NavLink>
               <Nav.Link href="#pricing">About Us</Nav.Link>
               <Nav.Link href="#pricing">Case Studies</Nav.Link>
           <Nav.Link href="#pricing">Podcasts</Nav.Link>
