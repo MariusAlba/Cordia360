@@ -40,3 +40,8 @@
 .Navbar {
   text-decoration: none;
 }
+
+.Footer {
+  text-decoration: underline;
+  color: green;
+}

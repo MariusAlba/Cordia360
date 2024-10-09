@@ -15,6 +15,7 @@ import { HashRouter, Router, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/home';
 import Produ from './pages/produ';
+import AboutUs from './pages/aboutUs';
 
 
 
@@ -33,6 +34,15 @@ function App() {
         </li>
         <li>
           <NavLink to="/produ">Produ </NavLink>
+        </li>
+        <li>
+          <NavLink to="/aboutUs">About Us </NavLink>
+          <li>
+          <NavLink to="/caseStudies">Case Studies </NavLink>
+        </li>
+        <li>
+          <NavLink to="/podcasts">Podcast </NavLink>
+        </li>
         </li>
       </ul>
     </div>

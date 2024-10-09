@@ -8,7 +8,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import Produ from './pages/produ';
 import Home from './pages/home';
-
+import AboutUs from './pages/aboutUs';
+import CaseStudies from './pages/caseStudies';
+import Podcast from './pages/podcasts';
 
 
 // const root = ReactDOM.createRoot(
@@ -69,6 +71,9 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path='/home' element={<Home />} />
         <Route path="/produ" element={<Produ />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/caseStudies" element={<CaseStudies />} />
+        <Route path="/podcasts" element={<Podcast />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

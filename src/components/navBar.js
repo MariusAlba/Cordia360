@@ -7,6 +7,7 @@ import logoBrand from './Logo';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 // import { NavLink } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
+
 import Home from '../pages/home';
 
 
@@ -31,19 +32,20 @@ function BasicExample() {
           <Nav className="me-auto">
           <NavLink to="/home" style={{ textDecoration: 'none', paddingRight: 6 }}> Home  </NavLink>
             <NavLink to="/produ" style={{ textDecoration: 'none' }}> Products </NavLink>
-              <Nav.Link href="#pricing">About Us</Nav.Link>
-              <Nav.Link href="#pricing">Case Studies</Nav.Link>
-          <Nav.Link href="#pricing">Podcasts</Nav.Link>
+            <NavLink to="/aboutus" style={{ textDecoration: 'none', paddingLeft: 6 }}>About Us</NavLink>
+            <NavLink to="/caseStudies" style={{ textDecoration: 'none', paddingLeft: 6 }}>Case Studies</NavLink>
+            {/* <NavLink href="#pricing" style={{ textDecoration: 'none' }}>Case Studies</NavLink> */}
+            <NavLink to="/podcasts" style={{ textDecoration: 'none', paddingLeft: 6}}>Podcasts</NavLink>
             <NavDropdown title="More" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Contact</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Our Global Communaty of Cordia Clinicians</NavDropdown.Item>
+              <NavLink href="#action/3.1" style={{ textDecoration: 'none' }}>Contact</NavLink>
+              <NavLink href="#action/3.3" style={{ textDecoration: 'none' }}> Our Global Communaty of Cordia Clinicians</NavLink>
               <NavDropdown title="Specialties and Services" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.2">
+              <NavLink href="#action/3.2">
                    Doctor Registration Form
-                </NavDropdown.Item>
-                 <NavDropdown.Item href="#action/3.2">
+                </NavLink >
+                 <NavLink  href="#action/3.2">
                  Dietician Registration Form
-                 </NavDropdown.Item>
+                 </NavLink >
               </NavDropdown>
 
               {/* <NavDropdown.Item href="#action/3.2">
