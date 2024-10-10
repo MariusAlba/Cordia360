@@ -43,6 +43,9 @@ function App() {
         <li>
           <NavLink to="/podcasts">Podcast </NavLink>
         </li>
+        <li>
+          <NavLink to="/dieticianRegistraionForm">DieticianRegistraionForm </NavLink>
+        </li>
         </li>
       </ul>
     </div>

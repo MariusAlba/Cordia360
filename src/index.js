@@ -11,6 +11,8 @@ import Home from './pages/home';
 import AboutUs from './pages/aboutUs';
 import CaseStudies from './pages/caseStudies';
 import Podcast from './pages/podcasts';
+import OurGlobalCommunity from './pages/ourGlobalCommunity';
+import DieticianRegistraionForm from './pages/dieticianRegistraionForm';
 
 
 // const root = ReactDOM.createRoot(
@@ -74,6 +76,7 @@ root.render(
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/caseStudies" element={<CaseStudies />} />
         <Route path="/podcasts" element={<Podcast />} />
+        <Route path="/dieticianRegistraionForm" element={<DieticianRegistraionForm />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

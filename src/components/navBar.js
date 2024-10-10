@@ -18,7 +18,7 @@ function BasicExample() {
 
       <Navbar.Brand href="#home">
                 <img
-                src="/img/logo.svg"
+                src="https://impro.usercontent.one/appid/oneComWsb/domain/cordia360.com/media/cordia360.com/onewebmedia/Cordia%20Logo%20Last%20One%7D.png?etag=%2233898-667954dc%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=102%2B105"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
@@ -38,13 +38,13 @@ function BasicExample() {
             <NavLink to="/podcasts" style={{ textDecoration: 'none', paddingLeft: 6}}>Podcasts</NavLink>
             <NavDropdown title="More" id="basic-nav-dropdown">
               <NavLink href="#action/3.1" style={{ textDecoration: 'none' }}>Contact</NavLink>
-              <NavLink href="#action/3.3" style={{ textDecoration: 'none' }}> Our Global Communaty of Cordia Clinicians</NavLink>
+              <NavLink to="/" style={{ textDecoration: 'none' }}> Our Global Community of Cordia Clinicians</NavLink>
               <NavDropdown title="Specialties and Services" id="collapsible-nav-dropdown">
-              <NavLink href="#action/3.2">
-                   Doctor Registration Form
+              <NavLink to="/">
+                   Doctor Registration Form 
                 </NavLink >
-                 <NavLink  href="#action/3.2">
-                 Dietician Registration Form
+                 <NavLink  to="/dieticianRegistraionForm">
+                  Dietician Registration Form 
                  </NavLink >
               </NavDropdown>
 
