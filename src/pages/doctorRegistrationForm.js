@@ -5,10 +5,23 @@ import {Row, Image, Col, Card} from 'react-bootstrap'
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import ListExample from '../components/Foot';
+import { useState } from 'react';
 
 import Button from 'react-bootstrap/Button';
 
 const DoctorRegistrationForm = () => {
+
+    const [email, setEmail] = useState('')
+    const [phonenumber, setNumber] = useState('')
+    
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        console.log(email + + phonenumber)
+        
+        
+    }   
+
   return (
     <div><BasicExample />
     <Container className='' style={{marginBottom: '110px'}}>
@@ -31,26 +44,21 @@ const DoctorRegistrationForm = () => {
      <p>Once approved, your profile will go live on the Cordia® platform</p>
      </Col>
    </Row>
-{/* 
-        <InputGroup className="mb-3">
-            <InputGroup.Text>First and last name</InputGroup.Text>
-            <Form.Control aria-label="First name" />
-            <Form.Control aria-label="Last name" />
-        </InputGroup> */}
+
        
         <Form>
             <h3 className='justify-content-center mb-5'>Pre-Register as a Doctor</h3>
         <Form.Group className="mb-3" controlId="formGroupEmail">
             <Form.Label>Full Name *</Form.Label>
-            <Form.Control type="email" placeholder="Type Full Name" />
+            <Form.Control type="email" placeholder="Type Full Name"  value={email} onChange={ (e) => setEmail(e.target.value) }/>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupEmail">
             <Form.Label>Phone Number *</Form.Label>
-            <Form.Control type="email" placeholder="Type Phone Number" />
+            <Form.Control type="number" placeholder="Type Phone Number" value={phonenumber} onChange={ (e) => setNumber(e.target.value) }/>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupEmail">
             <Form.Label>Email *</Form.Label>
-            <Form.Control type="email" placeholder="Type email" />
+            <Form.Control type="text" placeholder="Type email" />
         </Form.Group>
 
         <Form>
@@ -263,7 +271,7 @@ const DoctorRegistrationForm = () => {
         />
       </Form.Group>
 
-      <Button type="submit">Submit form</Button>
+      <Button type="submit" onClick={handleSubmit}>Submit form</Button>
 
            
 
