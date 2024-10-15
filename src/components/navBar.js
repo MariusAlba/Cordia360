@@ -40,7 +40,7 @@ function BasicExample() {
               <NavLink href="#action/3.1" style={{ textDecoration: 'none' }}>Contact</NavLink>
               <NavLink to="/" style={{ textDecoration: 'none' }}> Our Global Community of Cordia Clinicians</NavLink>
               <NavDropdown title="Specialties and Services" id="collapsible-nav-dropdown">
-              <NavLink to="/">
+              <NavLink to="/doctorRegistrationForm">
                    Doctor Registration Form 
                 </NavLink >
                  <NavLink  to="/dieticianRegistraionForm">

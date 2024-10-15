@@ -46,6 +46,9 @@ function App() {
         <li>
           <NavLink to="/dieticianRegistraionForm">DieticianRegistraionForm </NavLink>
         </li>
+        <li>
+          <NavLink to="/doctorRegistraionForm">DoctorRegistrationForm </NavLink>
+        </li>
         </li>
       </ul>
     </div>
