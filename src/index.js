@@ -71,7 +71,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path='/home' element={<Home />} />
         <Route path="/produ" element={<Produ />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -79,6 +79,7 @@ root.render(
         <Route path="/podcasts" element={<Podcast />} />
         <Route path="/dieticianRegistraionForm" element={<DieticianRegistraionForm />} />
         <Route path="/doctorRegistrationForm" element={<DoctorRegistrationForm />} />
+        
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
